@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "ComfortaaR";
+    src: url("../fonts/Comfortaa-Regular.ttf") format("truetype");
+    font-style: Regular;
+}
+
+@font-face {
+    font-family: "ComfortaaM";
+    src: url("../fonts/Comfortaa-Medium.ttf") format("truetype");
+    font-style: Medium;
+}
+
+@font-face {
+    font-family: "ComfortaaS";
+    src: url("../fonts/Comfortaa-SemiBold.ttf") format("truetype");
+    font-style: SemiBold;
+}
