@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', function () {
 
     function initEgoSlider() {
         const slides = document.querySelectorAll('.vip-hall-bg');
@@ -218,6 +218,48 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 4000);
         });
     }
+
+
+
+
+    window.addEventListener('scroll', () => {
+    
+        const header = document.querySelector('header');
+    
+        // Если прокрутили больше 50px, добавляем класс 'scrolled'
+    
+        if (window.scrollY > 50) {
+    
+            header.classList.add('scrolled');
+    
+        } else {
+    
+            header.classList.remove('scrolled');
+    
+        }
+    });
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

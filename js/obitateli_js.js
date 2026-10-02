@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", function () {
     // Универсальная функция инициализации карусели
     function initCarousel(config) {
         const wrap = document.querySelector(config.wrapSelector);
@@ -104,4 +104,96 @@ document.addEventListener("DOMContentLoaded", () => {
         dotsContainerSelector: ".squid-dots",
         baseSlideClass: "squid-slide"
     });
+
+
+
+
+    window.addEventListener('scroll', () => {
+    
+        const header = document.querySelector('header');
+    
+        // Если прокрутили больше 50px, добавляем класс 'scrolled'
+    
+        if (window.scrollY > 50) {
+    
+            header.classList.add('scrolled');
+    
+        } else {
+    
+            header.classList.remove('scrolled');
+    
+        }
+    });
+
+
+
+
+
+
+
+    gsap.registerPlugin(ScrollTrigger);
+
+// Левый узор плавно смещается вниз при скролле
+gsap.to(".pattern-left", {
+    yPercent: 30, // На сколько процентов сместить
+    ease: "none",
+    scrollTrigger: {
+        trigger: ".sections-wrapper",
+        start: "top top",
+        end: "bottom bottom",
+        scrub: 1 // Плавная привязка к скроллу (число = секунды задержки/плавности)
+    }
+});
+
+// Правый узор двигается с немного другой скоростью или вверх
+gsap.to(".pattern-right", {
+    yPercent: -20,
+    ease: "none",
+    scrollTrigger: {
+        trigger: ".sections-wrapper",
+        start: "top top",
+        end: "bottom bottom",
+        scrub: 1.5
+    }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 });

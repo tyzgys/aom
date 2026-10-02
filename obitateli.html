@@ -8,6 +8,8 @@
     <link href="./css/style.css" rel="stylesheet"/>
     <link href="./css/font.css" rel="stylesheet"/>
     <script src="./js/obitateli_js.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 </head>
 <body>
     <header>
@@ -57,18 +59,11 @@
 
 
 
+
     <section class="fish-hero-section">
         <div class="fish-hero-content">
-            <div class="top-logo">
-                <img src="images/logo.svg" alt="logo" class="logo-img">
-            </div>
-
             <div class="badge-tag">
-                <span>обитатели</span>
-            </div>
-
-            <div class="main-anim-logo">
-                <h1>anim logo</h1>
+                обитатели
             </div>
         </div>
     </section>
@@ -81,10 +76,14 @@
 
 
 
+    <div class="sections-wrapper">
+        <img src="./img/aome1.png" alt="" class="side-pattern pattern-left">
+        <img src="./img/aome2.png" alt="" class="side-pattern pattern-right">
+
+    
 
 
-
-    <!-- СЕКЦИЯ 1: ГЛУБОКОВОДНЫЕ РЫБЫ -->
+        <!-- СЕКЦИЯ 1: ГЛУБОКОВОДНЫЕ РЫБЫ -->
 
     <section class="fish-species-section">
         <h2 class="species-main-title">Глубоководные рыбы</h2>
@@ -291,6 +290,78 @@
 
         <div class="squid-dots"></div>
     </section>
+
+
+
+
+
+
+
+    <section class="contacts-section">
+        <h2 class="contacts-heading">Контактная информация</h2>
+
+        <div class="contacts-container">
+    
+            <div class="contacts-info-col">
+                <div class="contacts-text-group">
+                    <p>Адрес: (подземное расположение, указан примерно)</p>
+                    <p>Телефон: +7 (999) 000-00-00</p>
+                    <p>Email: info@aomelum.ru</p>
+                </div>
+
+                <a href="#" class="map-btn">Ссылка на карту, схема проезда</a>
+
+                <div class="social-links">
+                    <a href="o404o.html" target="_blank" class="social-card" aria-label="Telegram">
+                        <!-- Иконка Telegram SVG или заглушка -->
+                        <span>TG</span>
+                    </a>
+                    <a href="o404o.html" target="_blank" class="social-card" aria-label="VKontakte">
+                        <span>VK</span>
+                    </a>
+                    <a href="o404o.html" target="_blank" class="social-card" aria-label="WhatsApp">
+                        <span>WA</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="contacts-form-col">
+                <form id="feedbackForm" class="feedback-form">
+                    <p class="form-title-desc">Форма для обратной связи (имя, email, сообщение).</p>
+                
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Ваш Email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Ваше сообщение" rows="4" required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Отправить</button>
+                
+                    <div id="formNotification" class="form-notification hidden">
+                        Сообщение успешно отправлено! Спасибо.
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+       
+         
+    </section>
+    </div>
+    
+
+
+
+
+
+
 
 
 

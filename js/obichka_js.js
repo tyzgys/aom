@@ -1,21 +1,14 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const form = document.getElementById('feedbackForm');
-    const notification = document.getElementById('formNotification');
+document.addEventListener("DOMContentLoaded", function () {
+      const sliderSection = document.querySelector(".gallery-slider-section");  
+      if (!sliderSection) return;
 
-    if (form) {
-        form.addEventListener('submit', function (e) {
-            e.preventDefault();
-
-
-            notification.classList.remove('hidden');
-
-            form.reset();
-
-            setTimeout(() => {
-                notification.classList.add('hidden');
-            }, 4000);
-        });
-    }
+      const prevBtn = sliderSection.querySelector(".gallery-arrow.prev-btn");
+      const nextBtn = sliderSection.querySelector(".gallery-arrow.next-btn");
+      const cards = sliderSection.querySelectorAll(".gallery-card");  
+      const dotsContainer = sliderSection.querySelector(".gallery-dots");
+  
+      let currentIndex = 0;
+      const totalSlides = cards.length;
 
 
 
@@ -23,61 +16,91 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-
-
-
-   const sliderContainer = document.querySelector(".halls-carousel-wrap");
-    if (!sliderContainer) return;
-
-    const prevBtn = sliderContainer.querySelector(".halls-prev");
-    const nextBtn = sliderContainer.querySelector(".halls-next");
-
-    if (prevBtn) {
-        prevBtn.innerHTML = `<svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>`;
-    }
-    if (nextBtn) {
-        nextBtn.innerHTML = `<svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>`;
-    }
-
-    const slides = document.querySelectorAll(".halls-slide");
-    const dotsContainer = document.querySelector(".halls-dots");
-    
-    let currentIndex = 0;
-    const totalSlides = slides.length;
-
-    // Генерация точек
-    if (dotsContainer && dotsContainer.children.length === 0) {
-        slides.forEach((_, idx) => {
+      // Автоматическое добавление палочек-индикаторов
+      if (dotsContainer && dotsContainer.children.length === 0) {
+        cards.forEach((_, idx) => {
             const dot = document.createElement("div");
-            dot.classList.add("halls-dot");
+            dot.classList.add("gallery-dot");
             if (idx === 0) dot.classList.add("active");
             dot.addEventListener("click", () => goToSlide(idx));
             dotsContainer.appendChild(dot);
         });
     }
 
-    const dots = document.querySelectorAll(".halls-dot");
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    const dots = sliderSection.querySelectorAll(".gallery-dot");
 
     function updateCarousel() {
-        slides.forEach((slide, idx) => {
-            slide.className = "halls-slide";
+        const prevIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+        const nextIndex = (currentIndex + 1) % totalSlides;
+        const currentCard = cards[currentIndex];
+        const prevCard = cards[prevIndex];
+        const nextCard = cards[nextIndex];
+        const cWidth = currentCard.getBoundingClientRect().width;
+        const pWidth = prevCard.getBoundingClientRect().width;
+        const nWidth = nextCard.getBoundingClientRect().width;
 
-            const prevIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-            const nextIndex = (currentIndex + 1) % totalSlides;
+
+
+
+
+
+
+
+
+
+
+
+
+        // Смещение боковых слайдов рассчитывается относительно габаритов каждого изображения
+        const shiftPrev = -((cWidth / 2) + (pWidth / 2) * 0.78 + 25);
+        const shiftNext = ((cWidth / 2) + (nWidth / 2) * 0.78 + 25);
+
+        cards.forEach((card, idx) => {
+            card.className = "gallery-card";
 
             if (idx === currentIndex) {
-                slide.classList.add("active");
+                card.classList.add("active");
+                card.style.setProperty('--shift-prev', '0px');
+                card.style.setProperty('--shift-next', '0px');
             } else if (idx === prevIndex) {
-                slide.classList.add("prev");
+                card.classList.add("prev");
+                card.style.setProperty('--shift-prev', `${shiftPrev}px`);
             } else if (idx === nextIndex) {
-                slide.classList.add("next");
+                card.classList.add("next");
+                card.style.setProperty('--shift-next', `${shiftNext}px`);
             }
         });
-
+        
         dots.forEach((dot, idx) => {
             dot.classList.toggle("active", idx === currentIndex);
         });
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     function goToSlide(index) {
         currentIndex = index;
@@ -98,10 +121,21 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
+    window.addEventListener('resize', updateCarousel);
     updateCarousel();
 
 
 
+
+
+
+
+
+
+
+
+
+    
 
 
 

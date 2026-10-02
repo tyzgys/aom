@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aomelum-главная</title>
+    <title>Aomelum</title>
     <link rel="icon" href="./img/logo2.png" type="image/png"> 
     <link href="./css/style.css" rel="stylesheet"/>
     <link href="./css/font.css" rel="stylesheet"/>
@@ -37,47 +37,70 @@
             виды рыб
         </a>
     </header>
+
     
-    <!-- <div class="mobile-menu-panel">
-        <button class="close-menu-btn" aria-label="Закрыть меню">&times;</button>
-        <nav class="mobile-nav">
-            <a href="about.html">О нас</a>
-            <a href="contact.html">залы</a>
-            <a href="lab.html">правила посещения</a>
-            <a href="cataloge.html">виды рыб</a>
-        </nav>
-    </div> -->
+    
+    
+    
+    
+    
+<div class="mobile-menu-panel">
+    <button class="close-menu-btn" aria-label="Закрыть меню">&times;</button>
+    <nav class="mobile-nav">
+        <!-- Добавляем эту строчку первым пунктом -->
+        <a href="index.html">главная</a>
 
-
-
-
-
-
-
-
-
-
-
+        <a href="o_nas.html">о нас</a>
+        <div class="mobile-dropdown">
+            <span class="mobile-dropdown-title">залы ▾</span>
+            <div class="mobile-dropdown-content">
+                <a href="vip.html">• vip</a>
+                <a href="obichka.html">• обычные</a>
+            </div>
+        </div>
+        <a href="rules.html">правила посещения</a>
+        <a href="obitateli.html">виды рыб</a>
+    </nav>
+</div>
+    
+    
+    
+    
+    
 
 
 
     <section class="main-content1">
-        
+   
         <div class="card card-light">
-            <h1 class="card-title">Aomelum</h1>
-            <p class="card-text">
-                Погрузитесь в уютный подземный мир живого света воды, где тишина <br> 
-                и спокойствие помогают восстановить себя, связь с природой
-            </p>
+            <div class="coral-top">
+                <img src="./img/lam2.png" alt="Коралл сверху справа">
+            </div>
+
+   
+            <div class="card-content">
+                <h1 class="card-title">Aomelum</h1>
+                <p class="card-text">
+                    Погрузитесь в уютный подземный мир живого света воды, где тишина <br> 
+                    и спокойствие помогают восстановить себя, связь с природой
+                </p>
+            </div>
+
+            
+            <div class="coral-bottom">
+                <img src="./img/lam1.png" alt="Коралл снизу слева">
+            </div>
         </div>
-        
+   
+
         <div class="card card-dark">
             <p class="card-text">
-                Что такое Аомелум: Подземный биолюминалиум, где свет создаётся <br>
+                Что такое Аомелум: Подземный биолюминариум, где свет создаётся <br>
                 живыми организмами - водорослями, бактериями, медузами. Всё без <br>
                 искусственного освещения.
             </p>
         </div>
+
     </section>
     
 
@@ -151,75 +174,116 @@
 
 
 
+
+
+
+
+
+    <section class="concept-section">
+        <div class="concept-container">
+            <img class="concept-bg-image" src="img/concept.png" alt="Концепция залов">
+            <div class="concept-text-box">
+                <h2 class="concept-heading">Концепция залов</h2>
+                <p class="concept-text">
+                    В нашем биоиллюминариуме мы создали уникальную концепцию залов, которая 
+                    позволяет каждому гостю выбрать формат отдыха и релаксации, подходящий 
+                    именно ему или его компании.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
     <section class="species-section">
-        <h2 class="species-heading">Какие виды есть у нас</h2>
-        
-        <div class="species-grid">
-            <div class="species-card card-small-vert placeholder">
+        <h2 class="species-heading">Какие организмы выставлены у нас</h2>
+
+        <div class="species-canvas">
+
+            <div class="species-card card-octopussv">
+                <img src="img/octopussv.png" alt="Octopussv">
                 <div class="card-info">
-                    <span class="card-title-text">Название обитателя <span class="arrow">⌄</span></span>
-                    <span class="card-subtitle-text">в каком зале находится</span>
+                    <span class="card-title-text">Светящийся осьминог</span>
                 </div>
             </div>
 
-            <div class="species-card card-small-vert placeholder">
+            <div class="species-card card-attola">
+                <img src="img/attola.png" alt="Attola">
                 <div class="card-info">
-                    <span class="card-title-text">Название обитателя <span class="arrow">⌄</span></span>
-                    <span class="card-subtitle-text">в каком зале находится</span>
-                </div>
-            </div>
-        
-            <div class="species-card card-large-horiz placeholder">
-                <div class="card-info">
-                    <span class="card-title-text">Название обитателя <span class="arrow">⌄</span></span>
-                    <span class="card-subtitle-text">в каком зале находится</span>
-                </div>
-            </div>
-            
-            <div class="species-card card-small-vert placeholder"><div class="card-info">
-                    <span class="card-title-text">Название обитателя <span class="arrow">⌄</span></span>
-                    <span class="card-subtitle-text">в каком зале находится</span>
+                    <span class="card-title-text">Медуза "Морская крапива"</span>
                 </div>
             </div>
 
-            <div class="species-card card-huge-horiz placeholder">
+            <div class="species-card card-anchous">
+                <img src="img/anchous.png" alt="Anchous">
                 <div class="card-info">
-                    <span class="card-title-text">Название обитателя <span class="arrow">⌄</span></span>
-                    <span class="card-subtitle-text">в каком зале находится</span>
-                </div>
-            </div>
-            
-            <div class="species-card card-medium-horiz placeholder"><div class="card-info">
-                    <span class="card-title-text">Название обитателя <span class="arrow">⌄</span></span>
-                    <span class="card-subtitle-text">в каком зале находится</span>
+                    <span class="card-title-text">Светящийся анчоус</span>
                 </div>
             </div>
 
-            <div class="species-card card-square placeholder">
+            <div class="species-card card-colocolnia">
+                <img src="img/colocolnia.png" alt="Colocolnia">
                 <div class="card-info">
-                    <span class="card-title-text">Название обитателя <span class="arrow">⌄</span></span>
-                    <span class="card-subtitle-text">в каком зале находится</span>
+                    <span class="card-title-text">Медуза "Кровавая колокольня"</span>
                 </div>
             </div>
 
-            <div class="species-card card-small-vert placeholder">
+            <div class="species-card card-fonarak">
+                <img src="img/fonarak.png" alt="Fonarak">
                 <div class="card-info">
-                    <span class="card-title-text">Название обитателя <span class="arrow">⌄</span></span>
-                    <span class="card-subtitle-text">в каком зале находится</span>
+                    <span class="card-title-text">Акула "Фонарь"</span>
                 </div>
             </div>
-            
-            
-            <div class="species-card card-medium-horiz placeholder card-with-text">
+
+            <div class="species-card card-grebnevik">
+                <img src="img/grebnevik.png" alt="Grebnevik">
                 <div class="card-info">
-                    <span class="card-title-text">Название обитателя <span class="arrow">⌄</span></span>
-                    <span class="card-subtitle-text">в каком зале находится</span>
+                    <span class="card-title-text">Гребневик</span>
                 </div>
             </div>
-            <div class="species-card card-square placeholder">
+
+            <div class="species-card card-krovcalm">
+                <img src="img/krovcalm.png" alt="Krovcalm">
                 <div class="card-info">
-                    <span class="card-title-text">Название обитателя <span class="arrow">⌄</span></span>
-                    <span class="card-subtitle-text">в каком зале находится</span>
+                    <span class="card-title-text">"Вампирский" кальмар</span>
+                </div>
+            </div>
+
+            <div class="species-card card-medu">
+                <img src="img/medu.png" alt="Medu">
+                <div class="card-info">
+                    <span class="card-title-text">Медуза "Атолла"</span>
+                </div>
+            </div>
+
+            <div class="species-card card-kalmsv">
+                <img src="img/kalmsv.png" alt="Kalmsv">
+                <div class="card-info">
+                    <span class="card-title-text">Светящийся кальмар</span>
+                </div>
+            </div>
+
+            <div class="species-card card-hrustalm">
+                <img src="img/hrustalm.png" alt="Hrustalm">
+                <div class="card-info">
+                    <span class="card-title-text">"Хрустальная" медуза</span>
+                </div>
+            </div>
+
+            <div class="species-card card-svetlak">
+                <img src="img/svetlak.png" alt="Svetlak">
+                <div class="card-info">
+                    <span class="card-title-text">Кальмар "Светлячок"</span>
                 </div>
             </div>
         </div>
@@ -234,20 +298,6 @@
 
 
 
-    <section class="concept-section">
-    <div class="concept-container">
-        <div class="concept-text-box">
-            <h2 class="concept-heading">Концепция залов</h2>
-            <p class="concept-text">
-                В нашем биоиллюминариуме мы создали уникальную концепцию залов, которая 
-                позволяет каждому гостю выбрать формат отдыха и релаксации, подходящий 
-                именно ему или его компании.
-            </p>
-        </div>
-        
-        <div class="concept-image-box placeholder"></div>
-    </div>
-</section>
 
 
 
@@ -256,40 +306,54 @@
 
 
     <section class="hall-slider-section">
-        <div class="slider-tabs">
-            <button class="tab-btn" data-category="vip" onclick="location.href='vip.html'">vip</button>
-            <button class="tab-btn" data-category="regular" onclick="location.href='obichka.html'">обычные</button>
-        </div>
+    <div class="slider-tabs">
+        <button class="tab-btn btn-vip" data-category="vip" onclick="location.href='vip.html'">vip</button>
+        <button class="tab-btn btn-regular" data-category="regular" onclick="location.href='obichka.html'">обычные</button>
+    </div>
 
-        <div class="slider-wrap">
-            <button class="slider-arrow prev-btn">&lt;</button>
-            <div class="slider-track" id="hallSlider">
-
-                <div class="slider-card placeholder">
-                    <div class="card-inner-placeholder"></div>
+    <div class="slider-wrap">
+        <button class="slider-arrow prev-btn">&lt;</button>
+        
+        <div class="slider-track" id="hallSlider">
+            <div class="slider-card">
+                <img src="img/egoint.png" alt="Эго">
+                <div class="card-info">
+                    <span class="card-title-text">Эго</span>
                 </div>
-
-                <div class="slider-card placeholder">
-                    <div class="card-inner-placeholder"></div>
-                </div>
-
-                <div class="slider-card placeholder">
-                    <div class="card-inner-placeholder"></div>            
-                </div>
-                    
-                    
-                <div class="slider-card placeholder">
-                    <div class="card-inner-placeholder"></div>
-                </div>
-
-                <div class="slider-card placeholder">
-                    <div class="card-inner-placeholder"></div>
-                </div>
-
             </div>
-            <button class="slider-arrow next-btn">&gt;</button>
+
+            <div class="slider-card">
+                <img src="img/duoint.png" alt="Дуо">
+                <div class="card-info">
+                    <span class="card-title-text">Дуо</span>
+                </div>
+            </div>
+
+            <div class="slider-card">
+                <img src="img/trioint.png" alt="Трио">
+                <div class="card-info">
+                    <span class="card-title-text">Трио</span>
+                </div>
+            </div>
+
+            <div class="slider-card">
+                <img src="img/homeint.png" alt="Home">
+                <div class="card-info">
+                    <span class="card-title-text">Home</span>
+                </div>
+            </div>
+
+            <div class="slider-card">
+                <img src="img/obichint.png" alt="Обычка">
+                <div class="card-info">
+                    <span class="card-title-text">Обычка</span>
+                </div>
+            </div>
         </div>
-    </section>
+
+        <button class="slider-arrow next-btn">&gt;</button>
+    </div>
+</section>
 
 
 
@@ -364,14 +428,14 @@
                 <a href="#" class="map-btn">Ссылка на карту, схема проезда</a>
 
                 <div class="social-links">
-                    <a href="https://t.me/" target="_blank" class="social-card" aria-label="Telegram">
+                    <a href="o404o.html" target="_blank" class="social-card" aria-label="Telegram">
                         <!-- Иконка Telegram SVG или заглушка -->
                         <span>TG</span>
                     </a>
-                    <a href="https://vk.com/" target="_blank" class="social-card" aria-label="VKontakte">
+                    <a href="o404o.html" target="_blank" class="social-card" aria-label="VKontakte">
                         <span>VK</span>
                     </a>
-                    <a href="https://wa.me/" target="_blank" class="social-card" aria-label="WhatsApp">
+                    <a href="o404o.html" target="_blank" class="social-card" aria-label="WhatsApp">
                         <span>WA</span>
                     </a>
                 </div>

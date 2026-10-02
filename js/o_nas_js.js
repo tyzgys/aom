@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", function () {
     const animatedElements = document.querySelectorAll(".scroll-anim");
 
     const observer = new IntersectionObserver((entries) => {
@@ -21,6 +21,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+    window.addEventListener('scroll', () => {
+    
+        const header = document.querySelector('header');
+    
+        // Если прокрутили больше 50px, добавляем класс 'scrolled'
+    
+        if (window.scrollY > 50) {
+    
+            header.classList.add('scrolled');
+    
+        } else {
+    
+            header.classList.remove('scrolled');
+    
+        }
+    });
 
 
 
@@ -48,6 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+    
 
 
 
