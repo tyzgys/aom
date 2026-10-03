@@ -159,86 +159,78 @@
 
 
 
-/* ==========================================
-   АДАПТИВ ДЛЯ VIP-СЕКЦИЙ (iPad Mini и телефоны)
-   ========================================== */
+/* АДАПТИВ ДЛЯ VIP-СЕКЦИЙ (iPad Mini и телефоны) */
 @media (max-width: 992px) {
 
-    /* --- ОБЩИЕ СТИЛИ ДЛЯ ВСЕХ VIP-СЕКЦИЙ --- */
     .vip-hall-section,
     .duo-vip-section,
     .trio-vip-section,
     .home-vip-section {
-        height: auto !important;
+        height: auto;
         min-height: 100vh;
-        max-height: none !important;
-        padding: 40px 0 !important;
-        margin-top: 0 !important;
+        max-height: none;
+        margin-top: 0;
+        margin-bottom: 60px ;
         position: relative;
     }
 
-    /* Уменьшаем шрифты текста и заголовков для компактности */
     .vip-hall-title,
     .duo-vip-title,
     .trio-vip-title,
     .home-vip-title {
-        font-size: 24px !important;
-        margin-bottom: 20px !important;
+        font-size: 24px;
+        margin-bottom: 20px;
     }
 
     .vip-hall-description,
     .duo-vip-description,
     .trio-vip-description,
     .home-vip-description {
-        font-size: 14px !important;
-        line-height: 1.4 !important;
+        font-size: 14px;
+        line-height: 1.4;
     }
 
     .vip-hall-description > li,
     .duo-vip-description > li,
     .trio-vip-description > li,
     .home-vip-description > li {
-        margin-bottom: 10px !important;
+        margin-bottom: 10px;
     }
 
-    /* Уменьшенные компактные кнопки */
     .vip-book-btn {
-        font-size: 14px !important;
-        padding: 8px 18px !important;
-        border-width: 1px !important;
-        border-radius: 10px !important;
-        position: static !important;
-        transform: none !important;
+        font-size: 14px;
+        padding: 8px 18px;
+        border-width: 1px;
+        border-radius: 10px;
+        position: relative;
+        transform: none;
     }
 
 
-    /* --- СЕКЦИИ DUO VIP И TRIO VIP (ПЕРЕВОД НА ПОЛНЫЙ ЭКРАН) --- */
     .duo-vip-container,
     .trio-vip-container {
-        width: 88vw !important;
-        max-width: 88vw !important;
-        height: auto !important;
-        flex-direction: column !important;
-        gap: 0 !important;
+        width: 88vw;
+        max-width: 88vw;
+        height: auto;
+        flex-direction: column;
+        gap: 0;
         position: relative;
         z-index: 3;
     }
 
-    /* Растягиваем слайдер-карточку на задний план всей секции */
     .duo-slider-card,
     .trio-slider-card {
-        position: absolute !important;
+        position: absolute;
         top: 0;
         left: 50%;
         transform: translateX(-50%);
-        width: 100vw !important;
-        height: 100% !important;
-        border-radius: 0 !important;
-        box-shadow: none !important;
+        width: 100vw;
+        height: 90vh;
+        border-radius: 20;
+        box-shadow: none;
         z-index: 1;
     }
 
-    /* Градиентный оверлей поверх картинок для читаемости текста */
     .duo-slider-card::after,
     .trio-slider-card::after {
         content: "";
@@ -251,92 +243,86 @@
         z-index: 2;
     }
 
-    /* Поднимаем текст и контент над фоновой картинкой */
     .duo-vip-info,
     .trio-vip-info {
         position: relative;
         z-index: 3;
-        width: 100% !important;
-        height: auto !important;
-        gap: 20px !important;
-        padding: 20px 0 !important;
+        width: 100%;
+        height: auto;
+        gap: 20px;
+        padding: 90px 0 0 0;
     }
 
-    /* Точки/полоски прогресса слайдера позиционируем вверху */
     .duo-progress-bar,
     .trio-progress-bar {
-        top: 10px !important;
-        bottom: auto !important;
+        top: 10px;
+        bottom: auto;
         z-index: 4;
     }
 
-    /* Кнопки для Duo и Trio */
     .duo-vip-action,
     .trio-vip-action {
-        justify-content: flex-start !important;
-        margin-top: 15px !important;
+        justify-content: flex-start;
+        margin-top: 15px;
     }
 
 
-    /* --- КОРРЕКТИРОВКА СЕКЦИЙ HOME VIP И ЭГО VIP (КНОПКА ВНИЗУ) --- */
     .home-vip-container,
     .vip-hall-container {
-        width: 88vw !important;
-        max-width: 88vw !important;
+        width: 88vw;
+        max-width: 88vw;
     }
 
-    /* Превращаем родительский блок информации в Flex-колонку */
     .home-vip-info,
     .vip-hall-info,
     .home-vip-body,
     .vip-hall-body {
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: flex-start !important;
-        width: 100% !important;
-        max-width: 100% !important;
-        padding: 0 !important;
-        margin: 20px auto 0 auto !important;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+        margin: 20px auto 0 auto;
     }
 
-    /* Принудительный порядок элементов: Заголовок -> Текст -> Кнопка */
     .home-vip-title,
     .vip-hall-title {
-        order: 1 !important;
+        order: 1;
     }
 
     .home-vip-description,
     .vip-hall-description {
-        order: 2 !important;
-        margin-bottom: 20px !important;
+        order: 2;
+        margin-bottom: 20px;
     }
 
     .home-vip-action,
     .vip-hall-action {
-        order: 3 !important; /* Опускаем кнопку в самый низ */
-        margin-top: 10px !important;
-        margin-bottom: 20px !important;
-        width: 100% !important;
-        display: flex !important;
-        justify-content: flex-start !important;
+        order: 3;
+        margin-top: 10px ;
+        margin-bottom: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
     }
 }
 
-/* Для мобильных устройств до 480px (дополнительное уплотнение) */
 @media (max-width: 480px) {
     .vip-hall-title,
     .duo-vip-title,
     .trio-vip-title,
     .home-vip-title {
-        font-size: 20px !important;
+        font-size: 20px;
     }
 
     .vip-hall-description,
     .duo-vip-description,
     .trio-vip-description,
     .home-vip-description {
-        font-size: 13px !important;
+        font-size: 13px;
     }
+    
 }
 
 
