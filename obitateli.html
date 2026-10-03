@@ -40,15 +40,40 @@
         </a>
     </header>
     
-    <!-- <div class="mobile-menu-panel">
-        <button class="close-menu-btn" aria-label="Закрыть меню">&times;</button>
+
+
+
+
+
+
+    <button class="mobile-burger-btn" aria-label="Открыть меню">
+        <span></span>
+        <span></span>
+    </button>
+
+    <div class="mobile-menu-overlay"></div>
+
+    <div class="mobile-menu-card">
         <nav class="mobile-nav">
-            <a href="about.html">О нас</a>
-            <a href="contact.html">залы</a>
-            <a href="lab.html">правила посещения</a>
-            <a href="cataloge.html">виды рыб</a>
+            <a href="index.html" class="mobile-nav-link">Главная</a>
+            <a href="o_nas.html" class="mobile-nav-link">О нас</a>
+        
+            <div class="mobile-dropdown">
+                <button class="mobile-dropdown-btn">
+                    <span>Виды залов</span>
+                    <span class="dropdown-arrow">&lt;</span>
+                </button>
+
+                <div class="mobile-dropdown-content">
+                    <a href="vip.html" class="mobile-nav-sublink">вип</a>
+                    <a href="obichka.html" class="mobile-nav-sublink">обычные</a>
+                </div>
+            </div>
+
+            <a href="rules.html" class="mobile-nav-link">Правила посещения</a>
+            <a href="obitateli.html" class="mobile-nav-link">Виды рыб</a>
         </nav>
-    </div> -->
+    </div>
 
 
 
@@ -81,215 +106,61 @@
         <img src="./img/aome2.png" alt="" class="side-pattern pattern-right">
 
     
+        <!-- СЕКЦИЯ 1: ГЛУБОКОВОДНЫЕ РЫБЫ -->    
+        <section class="fish-species-section">
+            <h2 class="species-main-title">Глубоководные рыбы</h2>
+
+            <div class="halls-carousel-wrap">
+                <button class="species-arrow fish-prev">&lt;</button>
+
+                <div class="halls-slides-container">
+                    <div class="halls-slide">
+                        <div class="species-card-bg" style="background-image: url('./img/luminous_anchovy.png');"></div>
+                        <div class="species-card-content">
+                            <h3 class="species-title">СВЕТЯЩИЙСЯ АНЧОУС</h3>
+                            <p class="species-description">Мелкая рыба, способная испускать свет благодаря специальным бактериям.</p>
+                        </div>
+                    </div>
 
 
-        <!-- СЕКЦИЯ 1: ГЛУБОКОВОДНЫЕ РЫБЫ -->
+                    <div class="halls-slide">    
+                        <div class="species-card-bg" style="background-image: url('./img/anglerfish.png');"></div>    
+                        <div class="species-card-content">    
+                            <h3 class="species-title">УДИЛЬЩИК</h3>    
+                            <p class="species-description">Глубоководная рыба, использующая светящийся отросток на голове как приманку для привлечения добычи в полной темноте океана.</p>    
+                        </div>    
+                    </div>
 
-    <section class="fish-species-section">
-        <h2 class="species-main-title">Глубоководные рыбы</h2>
 
-        <div class="halls-carousel-wrap">
-            <button class="species-arrow fish-prev">&lt;</button>
+                    <div class="halls-slide">    
+                        <div class="species-card-bg" style="background-image: url('./img/hatchetfish.png');"></div>    
+                        <div class="species-card-content">    
+                            <h3 class="species-title">РЫБА-ТОПОРИК</h3>    
+                            <p class="species-description">Небольшая серебристая рыба, способная излучать мягкий голубоватый свет для маскировки от хищников снизу.</p>    
+                        </div>    
+                    </div>
 
-            <div class="halls-slides-container">
-                <div class="halls-slide">
-                    <div class="species-card-bg" style="background-image: url('./img/luminous_anchovy.png');"></div>
-                    <div class="species-card-content">
-                        <h3 class="species-title">СВЕТЯЩИЙСЯ АНЧОУС</h3>
-                        <p class="species-description">Мелкая рыба, способная испускать свет благодаря специальным бактериям.</p>
+                    <div class="halls-slide">
+                        <div class="species-card-bg" style="background-image: url('./img/viperfish.png');"></div>
+                        <div class="species-card-content">
+                            <h3 class="species-title">РЫБА-ГАДЮКА</h3>
+                            <p class="species-description">Хищник с длинными клыками и светящимися органами вдоль тела, помогающими охотиться в глубоководной среде.</p>
+                        </div>
+                    </div>
+
+                    <div class="halls-slide">
+                        <div class="species-card-bg" style="background-image: url('./img/lantern_shark.png');"></div>
+                        <div class="species-card-content">
+                            <h3 class="species-title">АКУЛА-ФОНАРЬ</h3>
+                            <p class="species-description">Глубоководная акула, создающая свечение с помощью фотофоров для маскировки и общения.</p>
+                        </div>
                     </div>
                 </div>
-
-                <div class="halls-slide">    
-                    <div class="species-card-bg" style="background-image: url('./img/anglerfish.png');"></div>    
-                    <div class="species-card-content">    
-                        <h3 class="species-title">УДИЛЬЩИК</h3>    
-                        <p class="species-description">Глубоководная рыба, использующая светящийся отросток на голове как приманку для привлечения добычи в полной темноте океана.</p>    
-                    </div>    
-                </div>
-
-                <div class="halls-slide">    
-                    <div class="species-card-bg" style="background-image: url('./img/hatchetfish.png');"></div>    
-                    <div class="species-card-content">    
-                        <h3 class="species-title">РЫБА-ТОПОРИК</h3>    
-                        <p class="species-description">Небольшая серебристая рыба, способная излучать мягкий голубоватый свет для маскировки от хищников снизу.</p>    
-                    </div>    
-                </div>
-
-                <div class="halls-slide">
-                    <div class="species-card-bg" style="background-image: url('./img/viperfish.png');"></div>
-                    <div class="species-card-content">
-                        <h3 class="species-title">РЫБА-ГАДЮКА</h3>
-                        <p class="species-description">Хищник с длинными клыками и светящимися органами вдоль тела, помогающими охотиться в глубоководной среде.</p>
-                    </div>
-                </div>
-
-                <div class="halls-slide">
-                    <div class="species-card-bg" style="background-image: url('./img/lantern_shark.png');"></div>
-                    <div class="species-card-content">
-                        <h3 class="species-title">АКУЛА-ФОНАРЬ</h3>
-                        <p class="species-description">Глубоководная акула, создающая свечение с помощью фотофоров для маскировки и общения.</p>
-                    </div>
-                </div>
-            </div>
-            <button class="species-arrow fish-next">&gt;</button>
-        </div>
-
-        <div class="halls-dots"></div>
-    </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- СЕКЦИЯ 2: МЕДУЗЫ -->
-    <section class="jellyfish-species-section">
-        <h2 class="species-main-title">Медузы</h2>
-
-        <div class="jellyfish-carousel-wrap">
-            <button class="species-arrow jellyfish-prev">&lt;</button>
-
-            <div class="jellyfish-slides-container">
-                <div class="jellyfish-slide">
-                    <div class="species-card-bg" style="background-image: url('./img/ctenophore.png');"></div>
-                    <div class="species-card-content">
-                        <h3 class="species-title">ГРЕБНЕВИК</h3>
-                        <p class="species-description">Желеобразный морской организм, использующий переливающееся свечение для защиты и коммуникации в толще воды.</p>
-                    </div>
-                </div>
-
-                <div class="jellyfish-slide">
-                    <div class="species-card-bg" style="background-image: url('./img/crystal_jellyfish.png');"></div>
-                    <div class="species-card-content">
-                        <h3 class="species-title">ХРУСТАЛЬНАЯ МЕДУЗА</h3>
-                        <p class="species-description">Полупрозрачная медуза, известная мягким зелёным свечением, возникающим благодаря особым светящимся белкам.</p>
-                    </div>
-                </div>
-
-                <div class="jellyfish-slide">
-                    <div class="species-card-bg" style="background-image: url('./img/bloody_medusa.png');"></div>
-                    <div class="species-card-content">
-                        <h3 class="species-title">МЕДУЗА «КРОВАВАЯ КОЛОКОЛЬНЯ»</h3>
-                        <p class="species-description">Редкая красная медуза, светящаяся в темноте глубоких океанических слоёв.</p>
-                    </div>
-                </div>
-
-                <div class="jellyfish-slide">
-                    <div class="species-card-bg" style="background-image: url('./img/atoll_jellyfish.png');"></div>
-                    <div class="species-card-content">
-                        <h3 class="species-title">МЕДУЗА АТОЛЛА</h3>
-                        <p class="species-description">Прозрачная медуза, выпускающая яркие световые кольца при угрозе, чтобы отвлечь хищников.</p>
-                    </div>
-                </div>
-
-                <div class="jellyfish-slide">
-                    <div class="species-card-bg" style="background-image: url('./img/sea_nettle.png');"></div>
-                    <div class="species-card-content">
-                        <h3 class="species-title">МОРСКАЯ КРАПИВА</h3>
-                        <p class="species-description">Ядовитая медуза, создающая световые вспышки в ночной воде для отпугивания потенциальных врагов.</p>
-                    </div>
-                </div>
-            </div>
-            <button class="species-arrow jellyfish-next">&gt;</button>
-        </div>
-
-        <div class="jellyfish-dots"></div>
-    </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- СЕКЦИЯ 4: КАЛЬМАРЫ И ОСЬМИНОГИ -->
-    <section class="squid-species-section">
-        <h2 class="species-main-title">Кальмары и осьминоги</h2>
-
-        <div class="squid-carousel-wrap">
-            <button class="species-arrow squid-prev">&lt;</button>
-
-            <div class="squid-slides-container">
-                <div class="squid-slide">
-                    <div class="species-card-bg" style="background-image: url('./img/light_squid.png');"></div>
-                    <div class="species-card-content">
-                        <h3 class="species-title">СВЕТЯЩИЙСЯ КАЛЬМАР</h3>
-                        <p class="species-description">Активный ночной охотник, испускающий вспышки света для дезориентации врагов и привлечения добычи.</p>
-                    </div>
-                </div>
-
-                <div class="squid-slide">
-                    <div class="species-card-bg" style="background-image: url('./img/firefly_squid.png');"></div>
-                    <div class="species-card-content">
-                        <h3 class="species-title">КАЛЬМАР-СВЕТЛЯЧОК</h3>
-                        <p class="species-description">Миниатюрный кальмар, образующий яркое синее свечение во время ночных миграций и охоты.</p>
-                    </div>
-                </div>
-
-                <div class="squid-slide">
-                    <div class="species-card-bg" style="background-image: url('./img/finned_octopus.png');"></div>
-                    <div class="species-card-content">
-                        <h3 class="species-title">ПЛАВНИКОВЫЙ ОСЬМИНОГ</h3>
-                        <p class="species-description">Необычный осьминог с плавниками, использующий мягкое свечение в условиях полной темноты.</p>
-                    </div>
-                </div>
-
-                <div class="squid-slide">
-                    <div class="species-card-bg" style="background-image: url('./img/vump_squid.png');"></div>
-                    <div class="species-card-content">
-                        <h3 class="species-title">ВАМПИРСКИЙ КАЛЬМАР</h3>
-                        <p class="species-description">Необычный глубоководный моллюск, использующий биолюминесцентные сигналы для защиты от хищников.</p>
-                    </div>
-                </div>
-
-                <div class="squid-slide">
-                    <div class="species-card-bg" style="background-image: url('./img/light_octopus.png');"></div>
-                    <div class="species-card-content">
-                        <h3 class="species-title">СВЕТЯЩИЙСЯ ОСЬМИНОГ</h3>
-                        <p class="species-description">Морское животное, способное создавать свечение на поверхности тела для маскировки и отпугивания опасности.</p>
-                    </div>
-                </div>
+                <button class="species-arrow fish-next">&gt;</button>
             </div>
 
-            <button class="species-arrow squid-next">&gt;</button>
-        </div>
-
-        <div class="squid-dots"></div>
-    </section>
+            <div class="halls-dots"></div>
+        </section>
 
 
 
@@ -297,63 +168,225 @@
 
 
 
-    <section class="contacts-section">
-        <h2 class="contacts-heading">Контактная информация</h2>
 
-        <div class="contacts-container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- СЕКЦИЯ 2: МЕДУЗЫ -->
+        <section class="jellyfish-species-section">
+            <h2 class="species-main-title">Медузы</h2>
+
+            <div class="jellyfish-carousel-wrap">
+                <button class="species-arrow jellyfish-prev">&lt;</button>
+
+                <div class="jellyfish-slides-container">
+                    <div class="jellyfish-slide">
+                        <div class="species-card-bg" style="background-image: url('./img/ctenophore.png');"></div>
+                        <div class="species-card-content">
+                            <h3 class="species-title">ГРЕБНЕВИК</h3>
+                            <p class="species-description">Желеобразный морской организм, использующий переливающееся свечение для защиты и коммуникации в толще воды.</p>
+                        </div>
+                    </div>
+
+                    <div class="jellyfish-slide">
+                        <div class="species-card-bg" style="background-image: url('./img/crystal_jellyfish.png');"></div>
+                        <div class="species-card-content">
+                            <h3 class="species-title">ХРУСТАЛЬНАЯ МЕДУЗА</h3>
+                            <p class="species-description">Полупрозрачная медуза, известная мягким зелёным свечением, возникающим благодаря особым светящимся белкам.</p>
+                        </div>
+                    </div>
+
+                    <div class="jellyfish-slide">
+                        <div class="species-card-bg" style="background-image: url('./img/bloody_medusa.png');"></div>
+                        <div class="species-card-content">
+                            <h3 class="species-title">МЕДУЗА «КРОВАВАЯ КОЛОКОЛЬНЯ»</h3>
+                            <p class="species-description">Редкая красная медуза, светящаяся в темноте глубоких океанических слоёв.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="jellyfish-slide">
+                        <div class="species-card-bg" style="background-image: url('./img/atoll_jellyfish.png');"></div>
+                        <div class="species-card-content">
+                            <h3 class="species-title">МЕДУЗА АТОЛЛА</h3>
+                            <p class="species-description">Прозрачная медуза, выпускающая яркие световые кольца при угрозе, чтобы отвлечь хищников.</p>
+                        </div>
+                    </div>
+
+                    <div class="jellyfish-slide">
+                        <div class="species-card-bg" style="background-image: url('./img/sea_nettle.png');"></div>
+                        <div class="species-card-content">
+                            <h3 class="species-title">МОРСКАЯ КРАПИВА</h3>
+                            <p class="species-description">Ядовитая медуза, создающая световые вспышки в ночной воде для отпугивания потенциальных врагов.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="species-arrow jellyfish-next">&gt;</button>
+            </div>
+
+            <div class="jellyfish-dots"></div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- СЕКЦИЯ 4: КАЛЬМАРЫ И ОСЬМИНОГИ -->
+
+        <section class="squid-species-section">
+            <h2 class="species-main-title">Кальмары и осьминоги</h2>
+
+            <div class="squid-carousel-wrap">
+                <button class="species-arrow squid-prev">&lt;</button>
+
+                <div class="squid-slides-container">
+                    <div class="squid-slide">
+                        <div class="species-card-bg" style="background-image: url('./img/light_squid.png');"></div>
+                        <div class="species-card-content">
+                            <h3 class="species-title">СВЕТЯЩИЙСЯ КАЛЬМАР</h3>
+                            <p class="species-description">Активный ночной охотник, испускающий вспышки света для дезориентации врагов и привлечения добычи.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="squid-slide">
+                        <div class="species-card-bg" style="background-image: url('./img/firefly_squid.png');"></div>
+                        <div class="species-card-content">
+                            <h3 class="species-title">КАЛЬМАР-СВЕТЛЯЧОК</h3>
+                            <p class="species-description">Миниатюрный кальмар, образующий яркое синее свечение во время ночных миграций и охоты.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="squid-slide">
+                        <div class="species-card-bg" style="background-image: url('./img/finned_octopus.png');"></div>
+                        <div class="species-card-content">
+                            <h3 class="species-title">ПЛАВНИКОВЫЙ ОСЬМИНОГ</h3>
+                            <p class="species-description">Необычный осьминог с плавниками, использующий мягкое свечение в условиях полной темноты.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="squid-slide">
+                        <div class="species-card-bg" style="background-image: url('./img/vump_squid.png');"></div>
+                        <div class="species-card-content">
+                            <h3 class="species-title">ВАМПИРСКИЙ КАЛЬМАР</h3>
+                            <p class="species-description">Необычный глубоководный моллюск, использующий биолюминесцентные сигналы для защиты от хищников.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="squid-slide">
+                        <div class="species-card-bg" style="background-image: url('./img/light_octopus.png');"></div>
+                        <div class="species-card-content">
+                            <h3 class="species-title">СВЕТЯЩИЙСЯ ОСЬМИНОГ</h3>
+                            <p class="species-description">Морское животное, способное создавать свечение на поверхности тела для маскировки и отпугивания опасности.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="species-arrow squid-next">&gt;</button>
+            </div>
+
+            <div class="squid-dots"></div>
+        </section>
+
+
+
+
+
+
+
+
+        <section class="contacts-section">
+            <h2 class="contacts-heading">Контактная информация</h2>
+
+            <div class="contacts-container">
     
-            <div class="contacts-info-col">
-                <div class="contacts-text-group">
-                    <p>Адрес: (подземное расположение, указан примерно)</p>
-                    <p>Телефон: +7 (999) 000-00-00</p>
-                    <p>Email: info@aomelum.ru</p>
+                <div class="contacts-info-col">
+                    <div class="contacts-text-group">
+                        <p>Адрес: (подземное расположение, указан примерно)</p>
+                        <p>Телефон: +7 (999) 000-00-00</p>
+                        <p>Email: info@aomelum.ru</p>
+                    </div>
+
+                    <a href="#" class="map-btn">Ссылка на карту, схема проезда</a>
+
+                    <div class="social-links">
+                        <a href="o404o.html" target="_blank" class="social-card" aria-label="Telegram">
+                            <span>TG</span>
+                        </a>
+
+                        <a href="o404o.html" target="_blank" class="social-card" aria-label="VKontakte">
+                            <span>VK</span>
+                        </a>
+
+                        <a href="o404o.html" target="_blank" class="social-card" aria-label="WhatsApp">
+                            <span>WA</span>
+                        </a>
+                    </div>
                 </div>
 
-                <a href="#" class="map-btn">Ссылка на карту, схема проезда</a>
+                <div class="contacts-form-col">
+                    <form id="feedbackForm" class="feedback-form">
+                        <p class="form-title-desc">Форма для обратной связи (имя, email, сообщение).</p>
+                
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+                        </div>
 
-                <div class="social-links">
-                    <a href="o404o.html" target="_blank" class="social-card" aria-label="Telegram">
-                        <!-- Иконка Telegram SVG или заглушка -->
-                        <span>TG</span>
-                    </a>
-                    <a href="o404o.html" target="_blank" class="social-card" aria-label="VKontakte">
-                        <span>VK</span>
-                    </a>
-                    <a href="o404o.html" target="_blank" class="social-card" aria-label="WhatsApp">
-                        <span>WA</span>
-                    </a>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Ваш Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Ваше сообщение" rows="4" required></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Отправить</button>
+                
+                        <div id="formNotification" class="form-notification hidden">
+                            Сообщение успешно отправлено! Спасибо.
+                        </div>
+                    </form>
                 </div>
+
             </div>
-
-            <div class="contacts-form-col">
-                <form id="feedbackForm" class="feedback-form">
-                    <p class="form-title-desc">Форма для обратной связи (имя, email, сообщение).</p>
-                
-                    <div class="form-group">
-                        <input type="text" id="name" name="name" placeholder="Ваше имя" required>
-                    </div>
-
-                    <div class="form-group">
-                        <input type="email" id="email" name="email" placeholder="Ваш Email" required>
-                    </div>
-
-                    <div class="form-group">
-                        <textarea id="message" name="message" placeholder="Ваше сообщение" rows="4" required></textarea>
-                    </div>
-
-                    <button type="submit" class="submit-btn">Отправить</button>
-                
-                    <div id="formNotification" class="form-notification hidden">
-                        Сообщение успешно отправлено! Спасибо.
-                    </div>
-                </form>
-            </div>
-
-        </div>
 
        
-         
-    </section>
+
+        </section>
     </div>
     
 

@@ -44,24 +44,35 @@
     
     
     
-<div class="mobile-menu-panel">
-    <button class="close-menu-btn" aria-label="Закрыть меню">&times;</button>
-    <nav class="mobile-nav">
-        <!-- Добавляем эту строчку первым пунктом -->
-        <a href="index.html">главная</a>
 
-        <a href="o_nas.html">о нас</a>
-        <div class="mobile-dropdown">
-            <span class="mobile-dropdown-title">залы ▾</span>
-            <div class="mobile-dropdown-content">
-                <a href="vip.html">• vip</a>
-                <a href="obichka.html">• обычные</a>
+    <button class="mobile-burger-btn" aria-label="Открыть меню">
+        <span></span>
+        <span></span>
+    </button>
+
+    <div class="mobile-menu-overlay"></div>
+
+    <div class="mobile-menu-card">
+        <nav class="mobile-nav">
+            <a href="index.html" class="mobile-nav-link">Главная</a>
+            <a href="o_nas.html" class="mobile-nav-link">О нас</a>
+        
+            <div class="mobile-dropdown">
+                <button class="mobile-dropdown-btn">
+                    <span>Виды залов</span>
+                    <span class="dropdown-arrow">&lt;</span>
+                </button>
+
+                <div class="mobile-dropdown-content">
+                    <a href="vip.html" class="mobile-nav-sublink">вип</a>
+                    <a href="obichka.html" class="mobile-nav-sublink">обычные</a>
+                </div>
             </div>
-        </div>
-        <a href="rules.html">правила посещения</a>
-        <a href="obitateli.html">виды рыб</a>
-    </nav>
-</div>
+
+            <a href="rules.html" class="mobile-nav-link">Правила посещения</a>
+            <a href="obitateli.html" class="mobile-nav-link">Виды рыб</a>
+        </nav>
+    </div>
     
     
     
@@ -306,54 +317,59 @@
 
 
     <section class="hall-slider-section">
-    <div class="slider-tabs">
-        <button class="tab-btn btn-vip" data-category="vip" onclick="location.href='vip.html'">vip</button>
-        <button class="tab-btn btn-regular" data-category="regular" onclick="location.href='obichka.html'">обычные</button>
-    </div>
-
-    <div class="slider-wrap">
-        <button class="slider-arrow prev-btn">&lt;</button>
-        
-        <div class="slider-track" id="hallSlider">
-            <div class="slider-card">
-                <img src="img/egoint.png" alt="Эго">
-                <div class="card-info">
-                    <span class="card-title-text">Эго</span>
-                </div>
-            </div>
-
-            <div class="slider-card">
-                <img src="img/duoint.png" alt="Дуо">
-                <div class="card-info">
-                    <span class="card-title-text">Дуо</span>
-                </div>
-            </div>
-
-            <div class="slider-card">
-                <img src="img/trioint.png" alt="Трио">
-                <div class="card-info">
-                    <span class="card-title-text">Трио</span>
-                </div>
-            </div>
-
-            <div class="slider-card">
-                <img src="img/homeint.png" alt="Home">
-                <div class="card-info">
-                    <span class="card-title-text">Home</span>
-                </div>
-            </div>
-
-            <div class="slider-card">
-                <img src="img/obichint.png" alt="Обычка">
-                <div class="card-info">
-                    <span class="card-title-text">Обычка</span>
-                </div>
-            </div>
+    
+        <div class="slider-tabs">
+    
+            <button class="tab-btn btn-vip" data-category="vip" onclick="location.href='vip.html'">vip</button>
+    
+            <button class="tab-btn btn-regular" data-category="regular" onclick="location.href='obichka.html'">обычные</button>
+    
         </div>
 
-        <button class="slider-arrow next-btn">&gt;</button>
-    </div>
-</section>
+
+        <div class="slider-wrap">
+            <button class="slider-arrow prev-btn">&lt;</button>
+        
+            <div class="slider-track" id="hallSlider">
+                <div class="slider-card">
+                    <img src="img/egoint.png" alt="Эго">
+                    <div class="card-info">
+                        <span class="card-title-text">Эго</span>
+                    </div>
+                </div>
+
+                <div class="slider-card">
+                    <img src="img/duoint.png" alt="Дуо">
+                    <div class="card-info">
+                        <span class="card-title-text">Дуо</span>
+                    </div>
+                </div>
+
+                <div class="slider-card">
+                    <img src="img/trioint.png" alt="Трио">
+                    <div class="card-info">
+                        <span class="card-title-text">Трио</span>
+                    </div>
+                </div>
+                
+                <div class="slider-card">
+                    <img src="img/homeint.png" alt="Home">
+                    <div class="card-info">
+                        <span class="card-title-text">Home</span>
+                    </div>
+                </div>
+
+                <div class="slider-card">
+                    <img src="img/obichint.png" alt="Обычка">
+                    <div class="card-info">
+                        <span class="card-title-text">Обычка</span>
+                    </div>
+                </div>
+            </div>
+
+            <button class="slider-arrow next-btn">&gt;</button>
+        </div>
+    </section>
 
 
 

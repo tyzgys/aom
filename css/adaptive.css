@@ -1,10 +1,22 @@
+/*  СЕКЦИИ ВИДОВ РЫБ (ТЕЛЕФОНЫ И ПЛАНШЕТЫ) */
 @media (max-width: 768px) {
+    .species-section {
+        margin-top: 20px;
+    }
+
+    .species-heading {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
     .species-canvas {
+        position: static;
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 90vw;
+        width: 100%;
         height: auto;
+        top: 0;
         gap: 20px;
     }
 
@@ -12,43 +24,125 @@
         position: relative;
         top: auto;
         left: auto;
+        width: 85vw;
+        max-width: 320px;
+        height: auto;
+        border-radius: 12px;
+        overflow: hidden;
+    }
+
+    .species-card img {
         width: 100%;
-        height: 220px;
+        height: auto;
+        display: block;
+        object-fit: contain;
+    }
+
+    .card-info {
+        opacity: 1;
+        visibility: visible;
+        padding: 12px 14px;
+        background: linear-gradient(180deg, transparent 0%, rgba(5, 7, 10, 0.9) 100%);
     }
 
     .card-title-text {
         font-size: 14px;
+        opacity: 1;
     }
 }
 
 
 
-@media (max-width: 768px) {
-    .rules-page-wrapper {
-        max-width: 90vw;
+
+
+/* АДАПТИВ ДЛЯ СЕКЦИИ КОНТАКТОВ (iPad Mini и телефоны) */
+@media (max-width: 992px) {
+    .contacts-section {
+        padding: 40px 20px;
     }
 
-    .rules-badge {
-        font-size: 16px;
-        padding: 6px 16px;
-        border-radius: 8px;
-    }
-
-    .rule-title {
-        font-size: 20px;
-    }
-
-    .rule-description {
-        font-size: 15px;
-        max-width: 100%;
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .rule-section.align-right {
+    .contacts-heading {
+        font-size: 32px;
         text-align: left;
+        margin-bottom: 30px;
+    }
+
+    .contacts-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .contacts-info-col {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .contacts-text-group {
+        font-size: 16px;
+        max-width: 50%;
+    }
+
+    .social-links {
+        gap: 8vw;
+    }
+
+    .social-card {
+        width: 55px;
+        height: 55px;
+        font-size: 16px;
+        border-radius: 14px;
+    }
+
+    .map-btn {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+        box-sizing: border-box;
+    }
+
+    .contacts-form-col {
+        width: 100%;
+        margin-top: 10px;
+        padding: 25px 20px;
+    }
+
+    .form-title-desc {
+        text-align: center;
+        margin-bottom: 15px;
     }
 }
+
+@media (max-width: 576px) {
+    .contacts-info-col {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contacts-text-group {
+        max-width: 100%;
+    }
+
+    .social-links {
+        width: 100%;
+        justify-content: flex-start;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 768px) {
     .coral {
@@ -58,3 +152,167 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mobile-burger-btn,
+.mobile-menu-overlay,
+.mobile-menu-card {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    header {
+        display: none;
+    }
+
+    .mobile-burger-btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        position: fixed;
+        top: 15px;
+        right: 15px;
+        width: 44px;
+        height: 38px;
+        background: #FFE8BA;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        z-index: 1005;
+        padding: 0;
+    }
+
+    .mobile-burger-btn span {
+        width: 22px;
+        height: 3px;
+        background-color: #0d1a2d;
+        border-radius: 2px;
+    }
+
+    .mobile-menu-overlay {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.65);
+        opacity: 0;
+        visibility: hidden;
+        z-index: 1001;
+        transition: all 0.3s ease;
+    }
+
+    .mobile-menu-overlay.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .mobile-menu-card {
+        display: block;
+        position: fixed;
+        top: 65px;
+        right: 15px;
+        width: 82vw;
+        max-width: 320px;
+        background: rgba(56, 78, 112, 0.807);
+        backdrop-filter: blur(10px);
+        border-radius: 16px;
+        padding: 25px 20px;
+        z-index: 1002;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+        transition: all 0.3s ease;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    .mobile-menu-card.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    .mobile-nav {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .mobile-nav-link, 
+    .mobile-dropdown-btn {
+        color: #FFFFFF;
+        font-size: 18px;
+        font-weight: 700;
+        text-decoration: none;
+        background: transparent;
+        border: none;
+        padding: 0;
+        text-align: left;
+        cursor: pointer;
+        font-family: inherit;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        transition: color 0.2s ease;
+    }
+
+    .mobile-nav-link:active,
+    .mobile-nav-link.active,
+    .mobile-dropdown-btn:active,
+    .mobile-dropdown-btn.active,
+    .mobile-nav-sublink:active {
+        color: #FFE8BA ;
+    }
+
+    .dropdown-arrow {
+        font-size: 16px;
+        transition: transform 0.3s ease;
+    }
+
+    .mobile-dropdown-content {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 10px;
+        padding-left: 20px;
+    }
+
+    .mobile-dropdown-content.open {
+        display: flex;
+    }
+
+    .mobile-nav-sublink {
+        color: #FFFFFF;
+        font-size: 16px;
+        font-weight: 700;
+        text-decoration: none;
+        transition: color 0.2s ease;
+    }
+}
