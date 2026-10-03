@@ -480,3 +480,21 @@
         transition: color 0.2s ease;
     }
 }
+
+
+
+
+
+
+
+
+
+@media (max-width: 992px) {
+
+    .rules-bg-svg,
+    #bgTop,
+    #bgBottom {
+        display: none;
+    }
+
+}
