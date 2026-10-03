@@ -2726,7 +2726,6 @@ header.scrolled:hover {
     justify-content: center;
     overflow: hidden;
     padding: 30px 0;
-    background-color: #a0a0a0; /* Серый фон-заглушка */
     margin-top: 10vh;
 }
 
@@ -3029,7 +3028,7 @@ header.scrolled:hover {
     overflow: hidden;
 
     background-image: url('/img/obitatelifon.png');
-    background-size: 100% 100%; /* Растягивает картинку ровно по краям экрана без обрезки */
+    background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -3075,9 +3074,7 @@ header.scrolled:hover {
 
 
 
-/* =========================================
-   ОБЩИЕ СТИЛИ КАРТОЧЕК И КНОПОК
-   ========================================= */
+/* ОБЩИЕ СТИЛИ КАРТОЧЕК И КНОПОК */
 
 .species-main-title {
     font-family: "ComfortaaR", sans-serif;
